@@ -1,28 +1,28 @@
-export const loadAlbums = () => {
+export const loadCards = () => {
     return dispatch => {
         dispatch({
-            type: 'albums/load/start'
+            type: 'card/load/start'
         });
-        fetch('https://jsonplaceholder.typicode.com/albums/?_limit=15')
+        fetch('https://boiling-refuge-66454.herokuapp.com/images')
             .then(response => response.json())
             .then(json => {
                 dispatch({
-                    type: 'albums/load/success',
+                    type: 'card/load/success',
                     payload: json
                 })
             })
     }
 }
-export const loadPhotos = (id) => {
+export const loadModal = () => {
     return dispatch => {
         dispatch({
-            type: 'photo/load/start'
+            type: 'modal/load/start'
         });
-        fetch(`https://jsonplaceholder.typicode.com/photos/?albumId=${id}`)
+        fetch('https://boiling-refuge-66454.herokuapp.com/images')
             .then(response => response.json())
             .then(json => {
                 dispatch({
-                    type: 'photo/load/success',
+                    type: 'modal/load/success',
                     payload: json
                 })
             })

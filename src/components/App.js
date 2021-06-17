@@ -1,30 +1,26 @@
+import React, {useEffect} from 'react';
+import { Route } from  "react-router-dom"
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
 import {useDispatch} from "react-redux";
-import {useEffect} from "react";
-import {loadAlbums} from "../redux/action";
-import Albums from "./Albums";
-import Photos from "./Photos";
-import { Route } from "react-router-dom"
+import {loadCards} from "../redux/action";
 
-function App() {
-  const dispatch = useDispatch();
+function App(props) {
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(loadAlbums())
-  },[])
-  return (
-      <Route path='/:id?'>
-          <div className="container">
-              <div className='row'>
-                  <div className='col-3'>
-                      <Albums/>
-                  </div>
-                  <div className='col'>
-                      <Photos/>
-                  </div>
-              </div>
-          </div>
-      </Route>
-  );
+    useEffect(() => {
+        dispatch(loadCards())
+    },[])
+    return (
+        <Route path='/:id?'>
+            <div>
+                <Header/>
+                <Main/>
+                <Footer/>
+            </div>
+        </Route>
+    );
 }
 
 export default App;

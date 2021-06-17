@@ -1,8 +1,8 @@
 import {applyMiddleware,combineReducers,createStore} from 'redux';
 import thunk from "redux-thunk";
 import {createLogger} from "redux-logger";
-import photosReducer from "./photos";
-import albumsReducer from "./albums";
+import cardsReducer from "./cards";
+import modalReducer from "./modal";
 
 const logger = createLogger({
     diff: true,
@@ -10,8 +10,8 @@ const logger = createLogger({
 })
 
 const rootReducer = combineReducers({
-    albums: albumsReducer,
-    photos: photosReducer
+    cards: cardsReducer,
+    modal: modalReducer
 })
 const store = createStore(rootReducer, applyMiddleware(thunk,logger))
 

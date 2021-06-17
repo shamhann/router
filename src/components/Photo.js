@@ -1,10 +1,12 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function Photo(props) {
+
     return (
-        <li className='list-group-item list-group-flush'>
-            <img src={props.photo.url} alt="image"/>
-        </li>
+        <Link  to={`/${props.card.id}`}>
+            <img className='image' src={props.card.url} alt="image" />
+        </Link>
     );
 }
 

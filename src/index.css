@@ -1,13 +1,84 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.headerTitle{
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 30px 0 30px;
+}
+.loading{
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  width: 730px;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+.img{
+  width: 100%;
+}
+.image{
+  width: 230px;
+  margin-bottom: 20px;
+}
+.modal{
+  font-size: 16px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content{
+  position: relative;
+  color: black;
+  padding: 30px;
+  width: 900px;
+  background-color: white;
+  border-radius: 20px;
+}
+.btn {
+  position: relative;
+  right: 6px;
+  top: 3px;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+btn:hover{
+  color: black;
+}
+.commentBtn {
+  width: 600px;
+  background-color: #4997D0;
+  font-family: Roboto;
+  position: relative;
+  font-size: 18px;
+  border: 0;
+  padding: 8px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.input{
+  position: relative;
+  width: 200px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
