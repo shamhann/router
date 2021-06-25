@@ -2,7 +2,11 @@ import React from 'react';
 
 function Footer(props) {
     return (
-        <div></div>
+        <div className='footer'>
+            <div className='footerText'>
+                © 2018-2019
+            </div>
+        </div>
     );
 }
 

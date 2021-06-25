@@ -13,13 +13,11 @@ function App(props) {
         dispatch(loadCards())
     },[])
     return (
-        <Route path='/:id?'>
-            <div>
-                <Header/>
-                <Main/>
-                <Footer/>
-            </div>
-        </Route>
+        <div className='container'>
+            <Header/>
+            <Main/>
+            <Footer/>
+        </div>
     );
 }
 

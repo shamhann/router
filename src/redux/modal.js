@@ -1,8 +1,10 @@
 const initialState = {
-    items: [],
+    modalImage: {},
+    items: {},
+    comments: [],
     loading: false
 }
-const modalReducer = (state = initialState, action) => {
+const modal = (state = initialState, action) => {
     switch (action.type) {
         case 'modal/load/start':
             return {
@@ -12,11 +14,24 @@ const modalReducer = (state = initialState, action) => {
         case 'modal/load/success':
             return {
                 ...state,
-                items: action.payload,
+                items:{
+                    url: action.payload.url
+                },
+                loading: false
+            }
+        case "comments/load/start":
+            return {
+                ...state,
+                loading: true
+            }
+        case "comments/load/success":
+            return {
+                ...state,
+                comments: [...state.comments, action.payload],
                 loading: false
             }
         default:
             return state
     }
 }
-export default modalReducer;
+export default modal;
