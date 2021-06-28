@@ -14,5 +14,4 @@ const rootReducer = combineReducers({
     modal: modalReducer
 })
 const store = createStore(rootReducer, applyMiddleware(thunk,logger))
-
 export default store;

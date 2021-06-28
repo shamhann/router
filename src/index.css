@@ -22,13 +22,6 @@ body {
     max-width: none;
   }
 }
-.headerTitle{
-  text-align: center;
-  align-items: center;
-  font-size: 35px;
-  font-weight: bold;
-  margin: 30px 0 30px;
-}
 .loading{
   font-size: 50px;
   text-align: center;
@@ -111,13 +104,4 @@ input{
   height: 30px;
   margin-top: 10px;
   padding-left: 5px;
-}
-.footer{
-  margin: auto;
-}
-.footerText{
-  border-top: 1px solid #CCCCCC;
-  text-align: center;
-  margin: 30px 0;
-  padding-top: 20px;
 }
