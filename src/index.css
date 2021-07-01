@@ -2,45 +2,45 @@ body {
   text-decoration: none;
   font-family: Roboto;
 }
-.container{
+.container {
   max-width: 1010px;
   margin: 0px auto;
   padding: 0px 15px;
 }
 @media (max-width: 1200px) {
-  .container{
+  .container {
     max-width: 970px;
   }
 }
 @media (max-width: 992px) {
-  .container{
+  .container {
     max-width: 750px;
   }
 }
 @media (max-width: 767px) {
-  .container{
+  .container {
     max-width: none;
   }
 }
-.loading{
+.loading {
   font-size: 50px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.card{
+.card {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
 }
-.img{
+.img {
   width: 100%;
 }
-.image{
+.image {
   margin-bottom: 20px;
 }
-.modal{
+.modal {
   font-size: 16px;
   color: white;
   position: fixed;
@@ -62,19 +62,19 @@ body {
   border-radius: 20px;
   display: flex;
 }
-.modalPhoto{
+.modalPhoto {
   height: 400px;
 }
-.modalLeft{
+.modalLeft {
   width: 600px;
 }
-.modalRight{
+.modalRight {
   width: 200px;
   padding: 10px;
   display: flex;
   position: relative;
 }
-.com{
+.com {
   margin-top: 40px;
 }
 .btn {
@@ -86,7 +86,7 @@ body {
   margin-top: 10px;
   color: red;
 }
-btn:hover{
+btn:hover {
   color: black;
 }
 .commentBtn {
@@ -95,10 +95,10 @@ btn:hover{
   color: white;
   margin-top: 10px;
   height: 40px;
- border: none;
+  border: none;
   border-radius: 5px;
 }
-input{
+input {
   border: 1px solid rgba(16, 16, 16, 0.3);
   width: 590px;
   height: 30px;

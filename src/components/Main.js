@@ -1,14 +1,13 @@
 import React from 'react';
-import {Route} from "react-router-dom"
-import Card from "./Card";
-import Modal from "./Modal";
+import { Route } from 'react-router-dom';
+import Card from './Card';
+import Modal from './Modal';
 function Main(props) {
-
   return (
-    <div className='main'>
+    <div className="main">
       <Card />
-      <Route path='/:id'>
-        <Modal/>
+      <Route path="/:id">
+        <Modal />
       </Route>
     </div>
   );
